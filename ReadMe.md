@@ -1,0 +1,2 @@
+# chessopsnpmts
+Chessops npm typescript.

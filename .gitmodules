@@ -1,0 +1,6 @@
+[submodule "chessops"]
+	path = chessops
+	url = https://github.com/niklasf/chessops
+[submodule "chessground"]
+	path = chessground
+	url = https://github.com/ornicar/chessground

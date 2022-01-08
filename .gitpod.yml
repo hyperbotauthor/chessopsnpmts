@@ -1,0 +1,9 @@
+tasks:
+  - name: Yarn Install
+    init: yarn && cd site && yarn
+
+  - name: Dev Server
+    command: yarn serve
+
+  - name: Rollup Watch
+    command: yarn watch

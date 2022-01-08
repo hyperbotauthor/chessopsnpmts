@@ -1,0 +1,67 @@
+{
+  "name": "@publishvue/chessopsnpmts",
+  "version": "1.0.22",
+  "contributors": [
+    "hyperbotauthor <hyperchessbotauthor@gmail.com>"
+  ],
+  "description": "Chessops npm typescript.",
+  "keywords": [
+    "chessops",
+    "npm",
+    "typescript"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/src/index.d.ts",
+  "bin": {},
+  "config": {},
+  "files": [
+    "*"
+  ],
+  "repository": "https://github.com/hyperbotauthor/chessopsnpmts",
+  "homepage": "https://github.com/hyperbotauthor/chessopsnpmts#chessopsnpmts",
+  "bugs": {
+    "url": "https://github.com/hyperbotauthor/chessopsnpmts/issues",
+    "email": "hyperchessbotauthor@gmail.com"
+  },
+  "scripts": {
+    "prepare": "",
+    "build": "yarn clean && rollup -c",
+    "generate": "",
+    "clean": "rm -rf dist",
+    "prettier": "prettier -w ./src ./test ",
+    "test": "jest",
+    "prep": "yarn prettier && yarn build",
+    "start": "node test.js",
+    "vuecreate": "vue create $1",
+    "serve": "cd site && yarn serve",
+    "builddist": "cd site ; yarn build",
+    "servedist": "http-server site/dist",
+    "updatesubs": "git submodule update --remote --merge",
+    "watch": "rollup -c --watch",
+    "reset": "git fetch origin main && git reset --hard origin/main",
+    "br": "prettier -w src/chessops.ts src/uciengine.ts && yarn build && node dist/index.js"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.0.6",
+    "@types/jest": "^27.0.2",
+    "@types/lodash": "^4.14.176",
+    "@vue/cli": "^4.5.14",
+    "http-server": "^14.0.0",
+    "jest": "^27.3.1",
+    "node-fetch": "2.6.5",
+    "parse-git-config": "^3.0.0",
+    "prettier": "^2.4.1",
+    "rollup": "^2.58.1",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "ts-jest": "^27.0.7",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "@badrap/result": "^0.2.8",
+    "@publishvue/chessground": "^8.1.7-maple",
+    "@publishvue/vueutils": "^1.0.13",
+    "lodash": "^4.17.21"
+  }
+}
